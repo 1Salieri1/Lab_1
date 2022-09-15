@@ -1,0 +1,33 @@
+using System;
+
+
+namespace Laba1
+{
+    class Program
+    {
+        public static void Main()
+        {
+            A a = new A();
+            Console.WriteLine(a.c);
+        }
+    }
+    class A
+    {
+        private int a = 35;
+        private int b = 24;
+
+        public int c
+        {
+            get
+            {
+                return a *= b;
+            }
+            set
+            {
+                a = value++;
+                b = value++;
+            }
+        }
+    }
+
+}
